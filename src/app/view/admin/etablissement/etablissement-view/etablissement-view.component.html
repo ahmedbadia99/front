@@ -1,0 +1,33 @@
+<p-dialog [(visible)]="viewDialog" [style]="{width: '450px'}" header="Commande Details" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <div class="p-field">
+            <label for="code">Code</label>
+            <input type="text" pInputText id="code" [(ngModel)]="selected.code" disabled />
+        </div>
+        <div class="p-field">
+            <label for="adresse">adresse</label>
+            <input type="text" pInputText id="adresse" [(ngModel)]="selected.adresse" disabled />
+        </div>
+        <div class="p-field">
+            <label for="Telephone">Telephone</label>
+            <input type="text" pInputText id="Telephone" [(ngModel)]="selected.tel" disabled />
+        </div>
+        <div class="p-field">
+            <label for="Nbr">Nombre Terrain</label>
+            <input type="text" pInputText id="Nbr" [(ngModel)]="selected.nbrTerrain" disabled />
+        </div>
+        <div class="p-field">
+            <label for="superficie">superficie</label>
+            <input type="text" pInputText id="superficie" [(ngModel)]="selected.superficie" disabled />
+        </div>
+        <div class="p-field">
+            <label for="state">state</label>
+            <input type="text" pInputText id="state" [(ngModel)]="selected.state" disabled />
+        </div>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Fermer" icon="pi pi-times" class="p-button-text" (click)="hideViewDialog()"></button>
+    </ng-template>
+</p-dialog>

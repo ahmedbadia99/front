@@ -49,7 +49,7 @@ export class CommandeListComponent implements OnInit {
             header: 'Confirm',
             icon: 'pi pi-exclamation-triangle',
             accept: () => {
-                this.service.deleteMultipleByReference().subscribe(data =>{
+                this.service.deleteMultipleByReference().subscribe(data => {
                     this.service.deleteMultipleIndexById();
                     this.selectes = null;
                     this.messageService.add({

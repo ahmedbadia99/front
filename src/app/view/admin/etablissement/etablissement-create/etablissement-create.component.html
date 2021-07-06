@@ -1,0 +1,40 @@
+<p-dialog [(visible)]="createDialog" [style]="{width: '450px'}" header="Etablissement Details" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <div class="p-field">
+            <label for="code">code</label>
+            <input type="text" pInputText id="code" [(ngModel)]="selected.code" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.code">code is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="Adresse">Adresse</label>
+            <input type="text" pInputText id="Adresse" [(ngModel)]="selected.adresse" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.adresse">adresse is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="tel">Telephone</label>
+            <input type="text" pInputText id="tel" [(ngModel)]="selected.tel" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.tel">telephone is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="Superficie">Superficie</label>
+            <input type="text" pInputText id="Superficie" [(ngModel)]="selected.superficie" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.superficie">superficie is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="nbrTerrain">Nombre terrain</label>
+            <input type="text" pInputText id="nbrTerrain" [(ngModel)]="selected.nbrTerrain" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.nbrTerrain">nombre telephone is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="State">State</label>
+            <input type="text" pInputText id="State" [(ngModel)]="selected.state" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.state">state is required.</small>
+        </div>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideCreateDialog()"></button>
+        <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text" (click)="save()"></button>
+    </ng-template>
+</p-dialog>

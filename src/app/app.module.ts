@@ -145,6 +145,11 @@ import { CommandeListComponent } from './view/admin/commandes/commande-list/comm
 import { CommandeEditComponent } from './view/admin/commandes/commande-edit/commande-edit.component';
 import { CommandeViewComponent } from './view/admin/commandes/commande-view/commande-view.component';
 import {ConfirmationService, MessageService} from "primeng/api";
+import { EtablissementComponent } from './view/admin/etablissement/etablissement.component';
+import { EtablissementListComponent } from './view/admin/etablissement/etablissement-list/etablissement-list.component';
+import { EtablissementCreateComponent } from './view/admin/etablissement/etablissement-create/etablissement-create.component';
+import { EtablissementEditComponent } from './view/admin/etablissement/etablissement-edit/etablissement-edit.component';
+import { EtablissementViewComponent } from './view/admin/etablissement/etablissement-view/etablissement-view.component';
 
 @NgModule({
     imports: [
@@ -283,7 +288,12 @@ import {ConfirmationService, MessageService} from "primeng/api";
         CommandesComponent,
         CommandeListComponent,
         CommandeEditComponent,
-        CommandeViewComponent
+        CommandeViewComponent,
+        EtablissementComponent,
+        EtablissementListComponent,
+        EtablissementCreateComponent,
+        EtablissementEditComponent,
+        EtablissementViewComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
