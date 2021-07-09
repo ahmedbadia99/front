@@ -1,0 +1,12 @@
+<button pButton pRipple type="button" icon="pi pi-plus" title="Add Column"
+        [disabled]="Hours.length === 20" class="p-mr-2"></button>
+<button pButton pRipple type="button" icon="pi pi-minus" title="Remove Column"
+        [disabled]="Hours.length === 1"></button>
+
+<div class="p-grid p-mt-2" *ngFor="let day of newday">
+    <div class="p-col" *ngFor="let hours of Hours" [@animation]="'visible'">
+        <div class="box" (click)="create(string + day + ' ' + hours+':00:00')">{{hours}}</div>
+    </div>
+</div>
+<app-reservation-create></app-reservation-create>
+

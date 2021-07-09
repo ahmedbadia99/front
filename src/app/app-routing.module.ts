@@ -38,7 +38,8 @@ import {AppErrorComponent} from './pages/app.error.component';
 import {AppAccessdeniedComponent} from './pages/app.accessdenied.component';
 import {AppLoginComponent} from './pages/app.login.component';
 import {CommandesComponent} from './view/admin/commandes/commandes.component';
-import {EtablissementComponent} from "./view/admin/etablissement/etablissement.component";
+import {EtablissementComponent} from './view/admin/etablissement/etablissement.component';
+import {ReservationComponent} from './view/admin/reservation/reservation.component';
 
 @NgModule({
     imports: [
@@ -49,6 +50,7 @@ import {EtablissementComponent} from "./view/admin/etablissement/etablissement.c
                     {path: '', component: DashboardDemoComponent},
                     {path: 'view/commande', component: CommandesComponent},
                     {path: 'view/etablissement', component: EtablissementComponent},
+                    {path: 'view/reservation', component: ReservationComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},

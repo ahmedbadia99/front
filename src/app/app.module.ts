@@ -150,6 +150,9 @@ import { EtablissementListComponent } from './view/admin/etablissement/etablisse
 import { EtablissementCreateComponent } from './view/admin/etablissement/etablissement-create/etablissement-create.component';
 import { EtablissementEditComponent } from './view/admin/etablissement/etablissement-edit/etablissement-edit.component';
 import { EtablissementViewComponent } from './view/admin/etablissement/etablissement-view/etablissement-view.component';
+import { ReservationComponent } from './view/admin/reservation/reservation.component';
+import { ReservationListComponent } from './view/admin/reservation/reservation-list/reservation-list.component';
+import { ReservationCreateComponent } from './view/admin/reservation/reservation-create/reservation-create.component';
 
 @NgModule({
     imports: [
@@ -293,7 +296,10 @@ import { EtablissementViewComponent } from './view/admin/etablissement/etablisse
         EtablissementListComponent,
         EtablissementCreateComponent,
         EtablissementEditComponent,
-        EtablissementViewComponent
+        EtablissementViewComponent,
+        ReservationComponent,
+        ReservationListComponent,
+        ReservationCreateComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
