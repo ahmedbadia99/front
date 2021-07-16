@@ -153,6 +153,14 @@ import { EtablissementViewComponent } from './view/admin/etablissement/etablisse
 import { ReservationComponent } from './view/admin/reservation/reservation.component';
 import { ReservationListComponent } from './view/admin/reservation/reservation-list/reservation-list.component';
 import { ReservationCreateComponent } from './view/admin/reservation/reservation-create/reservation-create.component';
+import { ProduitComponent } from './view/admin/produit/produit.component';
+import { ProduitListComponent } from './view/admin/produit/produit-list/produit-list.component';
+import { ProduitCreateComponent } from './view/admin/produit/produit-create/produit-create.component';
+import { ProduitViewComponent } from './view/admin/produit/produit-view/produit-view.component';
+import { ProduitEditComponent } from './view/admin/produit/produit-edit/produit-edit.component';
+import { ClientComponent } from './view/admin/client/client.component';
+import { ClientListComponent } from './view/admin/client/client-list/client-list.component';
+import { ClientViewComponent } from './view/admin/client/client-view/client-view.component';
 
 @NgModule({
     imports: [
@@ -299,7 +307,15 @@ import { ReservationCreateComponent } from './view/admin/reservation/reservation
         EtablissementViewComponent,
         ReservationComponent,
         ReservationListComponent,
-        ReservationCreateComponent
+        ReservationCreateComponent,
+        ProduitComponent,
+        ProduitListComponent,
+        ProduitCreateComponent,
+        ProduitViewComponent,
+        ProduitEditComponent,
+        ClientComponent,
+        ClientListComponent,
+        ClientViewComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

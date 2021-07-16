@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MessageService} from 'primeng/api';
 import {EtablissementService} from '../../../../controller/service/Etablissement.service';
-import {Etablissement} from "../../../../controller/model/Etablissement.model";
+import {Etablissement} from '../../../../controller/model/Etablissement.model';
 
 @Component({
   selector: 'app-etablissement-view',

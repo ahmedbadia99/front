@@ -1,0 +1,33 @@
+<p-dialog [(visible)]="viewDialog" [style]="{width: '450px'}" header="Produit Details" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <div class="p-field">
+            <label for="ref">Ref</label>
+            <input type="text" pInputText id="ref" [(ngModel)]="selected.ref" disabled />
+        </div>
+        <div class="p-field">
+            <label for="desination">desination</label>
+            <input type="text" pInputText id="desination" [(ngModel)]="selected.desination" disabled />
+        </div>
+        <div class="p-field">
+            <label for="description">description</label>
+            <input type="text" pInputText id="description" [(ngModel)]="selected.description" disabled />
+        </div>
+        <div class="p-field">
+            <label for="prix">prix</label>
+            <input type="text" pInputText id="prix" [(ngModel)]="selected.prix" disabled />
+        </div>
+        <div class="p-field">
+            <label for="image">image</label>
+            <input type="text" pInputText id="image" [(ngModel)]="selected.image" disabled />
+        </div>
+        <div class="p-field">
+            <label for="qtestock">qtestock</label>
+            <input type="text" pInputText id="qtestock" [(ngModel)]="selected.qteStock" disabled />
+        </div>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Fermer" icon="pi pi-times" class="p-button-text" (click)="hideViewDialog()"></button>
+    </ng-template>
+</p-dialog>

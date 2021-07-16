@@ -40,6 +40,8 @@ import {AppLoginComponent} from './pages/app.login.component';
 import {CommandesComponent} from './view/admin/commandes/commandes.component';
 import {EtablissementComponent} from './view/admin/etablissement/etablissement.component';
 import {ReservationComponent} from './view/admin/reservation/reservation.component';
+import {ProduitComponent} from './view/admin/produit/produit.component';
+import {ClientComponent} from './view/admin/client/client.component';
 
 @NgModule({
     imports: [
@@ -49,6 +51,8 @@ import {ReservationComponent} from './view/admin/reservation/reservation.compone
                 children: [
                     {path: '', component: DashboardDemoComponent},
                     {path: 'view/commande', component: CommandesComponent},
+                    {path: 'view/client', component: ClientComponent},
+                    {path: 'view/produit', component: ProduitComponent},
                     {path: 'view/etablissement', component: EtablissementComponent},
                     {path: 'view/reservation', component: ReservationComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},

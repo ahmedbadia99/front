@@ -1,0 +1,35 @@
+<p-dialog [(visible)]="editDialog" [style]="{width: '450px'}" header="Commande Edit" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <div class="p-field">
+            <label for="ref">ref</label>
+            <input type="text" pInputText id="ref" [(ngModel)]="selected.ref" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.ref">ref is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="desination">desination</label>
+            <input type="text" pInputText id="desination" [(ngModel)]="selected.desination" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.desination">desination is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="description">description</label>
+            <input type="text" pInputText id="description" [(ngModel)]="selected.description" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.description">description is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="prix">prix</label>
+            <input type="text" pInputText id="prix" [(ngModel)]="selected.prix" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.prix">prix is required.</small>
+        </div>
+        <div class="p-field">
+            <label for="qtestock">qtestock</label>
+            <input type="text" pInputText id="qtestock" [(ngModel)]="selected.qteStock" required autofocus />
+            <small class="p-invalid" *ngIf="submitted && !selected.qteStock">qtestock is required.</small>
+        </div>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideEditDialog()"></button>
+        <button pButton pRipple label="Edit" icon="pi pi-check" class="p-button-text" (click)="edit()"></button>
+    </ng-template>
+</p-dialog>
