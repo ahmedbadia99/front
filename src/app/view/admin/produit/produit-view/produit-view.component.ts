@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MessageService} from 'primeng/api';
-import {ProduitService} from '../../../../controller/service/Produit.service';
-import {Produit} from '../../../../controller/model/Produit.model';
+import {ProduitService} from '../../../../controller/service/produit.service';
+import {Produit} from '../../../../controller/model/produit.model';
 
 @Component({
   selector: 'app-produit-view',

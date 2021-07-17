@@ -11,13 +11,22 @@ import {Observable} from "rxjs";
 export class CommandeService {
 
     private url = environment.baseUrl + 'commande/';
+    // tslint:disable-next-line:variable-name
+
+    // tslint:disable-next-line:variable-name
     private _items: Array<Commande>;
+    // tslint:disable-next-line:variable-name
     private _selected: Commande;
+    // tslint:disable-next-line:variable-name
     private _selectes: Array<Commande>;
 
+    // tslint:disable-next-line:variable-name
     private _createDialog: boolean;
+    // tslint:disable-next-line:variable-name
     private _editDialog: boolean;
+    // tslint:disable-next-line:variable-name
     private _viewDialog: boolean;
+    // tslint:disable-next-line:variable-name
     private _submitted: boolean;
 
 
@@ -35,17 +44,17 @@ export class CommandeService {
         return this.http.post<Commande>(this.url, this.selected);
     }
 
-    public edit(): Observable<Commande> {
+    /*public edit(): Observable<Commande> {
         return this.http.put<Commande>(this.url, this.selected);
     }
-
-    public deleteByReference(): Observable<number> {
-        return this.http.delete<number>(this.url + 'reference/' + this.selected.reference);
+*/
+    public deleteByIndex(): Observable<number> {
+        return this.http.delete<number>(this.url + 'id/' + this.selected.id);
     }
-
-    public deleteMultipleByReference(): Observable<number> {
-        return this.http.post<number>(this.url + 'delete-multiple-by-reference' , this.selectes);
-    }
+    /*
+        public deleteMultipleByReference(): Observable<number> {
+            return this.http.post<number>(this.url + 'delete-multiple-by-reference' , this.selectes);
+        }*/
 
     public findIndexById(id: number): number {
         let index = -1;

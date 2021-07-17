@@ -37,11 +37,9 @@ import {AppNotfoundComponent} from './pages/app.notfound.component';
 import {AppErrorComponent} from './pages/app.error.component';
 import {AppAccessdeniedComponent} from './pages/app.accessdenied.component';
 import {AppLoginComponent} from './pages/app.login.component';
-import {CommandesComponent} from './view/admin/commandes/commandes.component';
-import {EtablissementComponent} from './view/admin/etablissement/etablissement.component';
-import {ReservationComponent} from './view/admin/reservation/reservation.component';
 import {ProduitComponent} from './view/admin/produit/produit.component';
 import {ClientComponent} from './view/admin/client/client.component';
+import {DashboardComponent} from './view/admin/dashboard/dashboard.component';
 
 @NgModule({
     imports: [
@@ -49,12 +47,9 @@ import {ClientComponent} from './view/admin/client/client.component';
             {
                 path: '', component: AppMainComponent,
                 children: [
-                    {path: '', component: DashboardDemoComponent},
-                    {path: 'view/commande', component: CommandesComponent},
+                    {path: '', component: DashboardComponent},
                     {path: 'view/client', component: ClientComponent},
                     {path: 'view/produit', component: ProduitComponent},
-                    {path: 'view/etablissement', component: EtablissementComponent},
-                    {path: 'view/reservation', component: ReservationComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},

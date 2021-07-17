@@ -87,7 +87,7 @@ import {TreeTableModule} from 'primeng/treetable';
 import {VirtualScrollerModule} from 'primeng/virtualscroller';
 
 import {AppComponent} from './app.component';
-import {AppCodeModule} from './app.code.component'
+import {AppCodeModule} from './app.code.component';
 import {AppMainComponent} from './app.main.component';
 import {AppConfigComponent} from './app.config.component';
 import {AppCrudComponent} from './pages/app.crud.component';
@@ -139,20 +139,9 @@ import {CustomerService} from './demo/service/customerservice';
 import {PhotoService} from './demo/service/photoservice';
 import {ProductService} from './demo/service/productservice';
 import {IconService} from './demo/service/iconservice';
-import { CommandeCreateComponent } from './view/admin/commandes/commande-create/commande-create.component';
-import { CommandesComponent } from './view/admin/commandes/commandes.component';
-import { CommandeListComponent } from './view/admin/commandes/commande-list/commande-list.component';
-import { CommandeEditComponent } from './view/admin/commandes/commande-edit/commande-edit.component';
-import { CommandeViewComponent } from './view/admin/commandes/commande-view/commande-view.component';
-import {ConfirmationService, MessageService} from "primeng/api";
-import { EtablissementComponent } from './view/admin/etablissement/etablissement.component';
-import { EtablissementListComponent } from './view/admin/etablissement/etablissement-list/etablissement-list.component';
-import { EtablissementCreateComponent } from './view/admin/etablissement/etablissement-create/etablissement-create.component';
-import { EtablissementEditComponent } from './view/admin/etablissement/etablissement-edit/etablissement-edit.component';
-import { EtablissementViewComponent } from './view/admin/etablissement/etablissement-view/etablissement-view.component';
-import { ReservationComponent } from './view/admin/reservation/reservation.component';
-import { ReservationListComponent } from './view/admin/reservation/reservation-list/reservation-list.component';
-import { ReservationCreateComponent } from './view/admin/reservation/reservation-create/reservation-create.component';
+
+import {ConfirmationService, MessageService} from 'primeng/api';
+
 import { ProduitComponent } from './view/admin/produit/produit.component';
 import { ProduitListComponent } from './view/admin/produit/produit-list/produit-list.component';
 import { ProduitCreateComponent } from './view/admin/produit/produit-create/produit-create.component';
@@ -161,6 +150,7 @@ import { ProduitEditComponent } from './view/admin/produit/produit-edit/produit-
 import { ClientComponent } from './view/admin/client/client.component';
 import { ClientListComponent } from './view/admin/client/client-list/client-list.component';
 import { ClientViewComponent } from './view/admin/client/client-view/client-view.component';
+import { DashboardComponent } from './view/admin/dashboard/dashboard.component';
 
 @NgModule({
     imports: [
@@ -295,19 +285,6 @@ import { ClientViewComponent } from './view/admin/client/client-view/client-view
         AppErrorComponent,
         AppAccessdeniedComponent,
         AppLoginComponent,
-        CommandeCreateComponent,
-        CommandesComponent,
-        CommandeListComponent,
-        CommandeEditComponent,
-        CommandeViewComponent,
-        EtablissementComponent,
-        EtablissementListComponent,
-        EtablissementCreateComponent,
-        EtablissementEditComponent,
-        EtablissementViewComponent,
-        ReservationComponent,
-        ReservationListComponent,
-        ReservationCreateComponent,
         ProduitComponent,
         ProduitListComponent,
         ProduitCreateComponent,
@@ -315,7 +292,8 @@ import { ClientViewComponent } from './view/admin/client/client-view/client-view
         ProduitEditComponent,
         ClientComponent,
         ClientListComponent,
-        ClientViewComponent
+        ClientViewComponent,
+        DashboardComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
